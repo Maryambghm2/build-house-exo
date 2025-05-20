@@ -36,7 +36,7 @@ public class House {
         }
 
         public Builder color(String color) {
-            this.color = roofing;
+            this.color = color;
             return this;
         }
 
@@ -48,7 +48,7 @@ public class House {
 
     @Override
     public String toString() {
-        String completion = havePool ? "have pool" : "doesn't have pool";
+        String completion = havePool ? " , have pool" : " , doesn't have pool";
 
         return "House{" +
                 "nbFloor=" + nbFloor +
