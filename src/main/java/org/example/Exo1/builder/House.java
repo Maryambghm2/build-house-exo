@@ -1,11 +1,13 @@
 package org.example.Exo1.builder;
-
+// Exercice Design Pattern de type : Les creational patterns
+// Créer classe House
 public class House {
     private int nbFloor;
     private boolean havePool;
     private String roofing;
     private String color;
 
+    // Créer constructeur House
     private House(Builder builder) {
         nbFloor = builder.nbFloor;
         havePool = builder.havePool;
@@ -13,12 +15,14 @@ public class House {
         color = builder.color;
     }
 
+    // Créer sous classe house
     public static class Builder {
         private int nbFloor;
         private boolean havePool;
         private String roofing;
         private String color;
 
+// Créer méthodes de la classe builder :
 
         public Builder nbFloor(int nbFloor) {
             this.nbFloor = nbFloor;
@@ -46,6 +50,8 @@ public class House {
         }
     }
 
+
+    // Méthode ToString affichage
     @Override
     public String toString() {
         String completion = havePool ? " , have pool" : " , doesn't have pool";

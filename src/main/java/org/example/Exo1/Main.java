@@ -9,7 +9,12 @@ public class Main {
         System.out.println(house);
         System.out.println(house1);
 
-        House house2 = new House.Builder().color("Red").havePool(true).nbFloor(7).roofing("Bois").build();
+        House house2 = new House.Builder()
+                .color("Red")
+                .havePool(true)
+                .nbFloor(7)
+                .roofing("Bois")
+                .build();
         System.out.println(house2);
     }
 }
