@@ -1,6 +1,6 @@
 package org.example.Exo2.decorator;
 
-public abstract class OriginalText implements Text {
+public class OriginalText implements Text {
 
     @Override
     public String transform() {
